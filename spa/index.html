@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single page app demo</title>
+
+    <!-- script and style for spa -->
+    <link rel="stylesheet" href="./styles/main.min.css">
+
+</head>
+
+<body>
+    <!-- nav bar html starts here -->
+    <nav>
+        <div class="header-holder">
+            <div class="burger" onclick="open_menu()" title="Menu bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Title here</h1>
+        </div>
+        <ul class="nav-links">
+            <li style='color:#262626' class="nav-btn">home</li>
+            <li class="nav-btn">guide</li>
+            <li class="nav-btn">about</li>
+        </ul>
+    </nav>
+    <!-- nav bar html ends here -->
+
+    <!-- spa demo starts here -->
+    <main>
+        <div class="page" id="home">Home</div>
+        <div class="page" id="guide">Guide</div>
+        <div class="page" id="about">About</div>
+    </main>
+    <!-- spa ends here  -->
+
+    <!-- imported scripts needed for spa -->
+    <script src="../nav-bar/scripts/nav.js"></script>
+
+    <!-- scripts -->
+    <script src="./scripts/spa.js"></script>
+</body>
+
+</html>
