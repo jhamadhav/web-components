@@ -59,4 +59,13 @@ const place_tool = () => {
 
     tt.style.transform = `translate(${tt_x}px,${tt_y}px)`;
 
+    // move the position of image and data as per the image size
+    let tool_img = document.getElementsByClassName("tool-img")[0].getBoundingClientRect();
+    let tool_desc = document.getElementsByClassName("tool-description")[0].getBoundingClientRect();
+    if (tool_desc.height > tool_img.height) {
+        tt.style.flexDirection = "column-reverse";
+    } else {
+        tt.style.flexDirection = "initial";
+    }
+
 }
