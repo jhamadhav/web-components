@@ -78,3 +78,15 @@ const create_tag = (inp) => {
     // insert tag inside the main container
     document.getElementsByClassName("tags")[0].appendChild(holder);
 }
+
+// use backspace to delete the tag
+tag_input.addEventListener("keydown", (e) => {
+    let key = e.keyCode;
+    console.log(key);
+
+    // if it is back or delete
+    if ((key == 8 || key == 46) && tag_input.value.length == 0) {
+        let tag = document.getElementsByClassName("tag-input-holder");
+        tag[tag.length - 1].remove();
+    }
+})
