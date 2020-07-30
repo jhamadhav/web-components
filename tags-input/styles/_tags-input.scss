@@ -39,7 +39,8 @@ $cross-bg:gray;
             transform: translate(60%, 2px);
             cursor: pointer;
 
-            &::before {
+            &::before,
+            &:after {
                 content: "";
                 position: absolute;
                 width: 100%;
@@ -49,11 +50,6 @@ $cross-bg:gray;
             }
 
             &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background: $cross-bg;
                 transform: translate(-2px, 200%) rotate(-45deg);
             }
 
