@@ -1,0 +1,31 @@
+ @import "./tags-input";
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     width: 100vw;
+     height: 100vh;
+     background-color: $tag-bg;
+     color: white;
+     font-family: fantasy;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ h1 {
+     width: 100%;
+     text-align: center;
+ }
+
+ p {
+     width: 80%;
+     max-width: 600px;
+     margin: auto;
+     text-align: center;
+ }
