@@ -17,11 +17,14 @@ $cross-bg:gray;
     font-size: medium;
 
     .tags {
+        max-width: 100%;
         max-height: 60px;
+        overflow: hidden;
         overflow-y: scroll;
         scrollbar-width: none;
 
         .tag-input-holder {
+            max-width: 100%;
             display: inline-block;
             border: none;
             border-radius: 4px;
@@ -29,6 +32,7 @@ $cross-bg:gray;
             padding: 2px 10px;
             margin: 2px;
             color: white;
+            word-wrap: break-word;
         }
 
         .tag-input-delete {
@@ -38,6 +42,7 @@ $cross-bg:gray;
             background: transparent;
             transform: translate(60%, 2px);
             cursor: pointer;
+            float: right;
 
             &::before,
             &:after {
